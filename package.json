@@ -4,10 +4,11 @@
   "author": "Nam",
   "license": "ISC",
   "description": "",
+  "main": "dist/server.js",
   "scripts": {
-    "dev1": "tsx ./src/section-1/process-obj.ts",
-    "dev2": "tsx ./src/section-1/crypto.ts",
-    "dev": "tsx ./src/section-1/event-emitter.ts"
+    "dev": "tsx watch ./src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
@@ -22,6 +23,5 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "pino-pretty": "^13.2.0"
-
   }
 }
